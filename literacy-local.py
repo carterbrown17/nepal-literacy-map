@@ -795,7 +795,5 @@ def update_sidebar_chart(dataset, indicator, clickData):
     # Return empty figure and None for other datasets or no clickData
     return go.Figure(), None
 
-import os
-
 if __name__ == "__main__":
-    app.run_server(debug=True, host="0.0.0.0", port=int(os.environ.get("PORT", 10000)))
+    app.run(debug=True)
